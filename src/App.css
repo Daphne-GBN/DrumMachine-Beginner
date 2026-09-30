@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #090909;
+  color: white;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+h1 {
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+.display {
+  width: 600px;
+  max-width: 95%;
+  background: #050505;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.display-message {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00ff99;
+  margin-bottom: 10px;
+}
+
+.display-info {
+  display: flex;
+  justify-content: space-between;
+  color: #888;
+  font-size: 13px;
+}
+
+.pads {
+  width: 600px;
+  max-width: 95%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.drum-pad {
+  height: 120px;
+  background: #222;
+  color: white;
+  border: 2px solid #444;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.drum-pad:hover {
+  background: #333;
+}
+
+.drum-pad.active {
+  background: #00cc77;
+  color: black;
+  box-shadow: 0 0 25px #00ff99;
+  transform: scale(0.95);
+}
+
+.pad-key {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.pad-name {
+  display: block;
+  margin-top: 8px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.controls {
+  width: 600px;
+  max-width: 95%;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.volume-control {
+  flex: 1;
+}
+
+.volume-control label {
+  display: block;
+  margin-bottom: 8px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+.power-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #00cc77;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
